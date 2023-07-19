@@ -7,11 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "header.scss": "sass --watch ./src/css/scss/header.scss ./src/css/header.css --no-source-map",
+    "footer.scss": "sass --watch ./src/css/scss/footer.scss ./src/css/footer.css --no-source-map"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.63.6"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
