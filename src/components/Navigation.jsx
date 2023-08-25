@@ -4,6 +4,7 @@ const Navigation = () => {
   const items = [
     { name: "Home", to: "/", id: 1 },
     { name: "Projects", to: "/projects", id: 2 },
+    { name: "Resume", to: "/resume", id: 3 },
   ];
   return (
     <nav>
@@ -15,7 +16,6 @@ const Navigation = () => {
                 to={item.to}
                 style={({ isActive }) => ({
                   color: isActive ? "hotpink" : "white",
-                  borderBottom: isActive ? "2px solid orange" : "none",
                 })}
               >
                 {item.name}
