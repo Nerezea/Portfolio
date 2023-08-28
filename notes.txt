@@ -1,0 +1,9 @@
+deploy pages
+
+1. "homepage": "https://Nerezea.github.io/portfolio",
+2. npm install gh-pages
+3. "pre-deploy": "npm run build"
+4. "deploy": "gh-pages -d dist"
+
+base: "/portfolio", in vite config.js
+"homepage": "https://Nerezea.github.io/portfolio", in package
