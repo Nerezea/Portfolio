@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Nerezea.github.io/portfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -8,10 +9,13 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "pre-deploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "header.scss": "sass --watch ./src/css/scss/header.scss ./src/css/header.css --no-source-map",
     "footer.scss": "sass --watch ./src/css/scss/footer.scss ./src/css/footer.css --no-source-map"
   },
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
