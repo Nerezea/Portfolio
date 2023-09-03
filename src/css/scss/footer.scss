@@ -1,4 +1,4 @@
-$color-light: rgba(255, 255, 255);
+@import "./_scss/_colors.scss";
 
 footer {
   background-color: rgba($color-light, 0.085);

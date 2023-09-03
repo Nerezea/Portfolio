@@ -1,0 +1,43 @@
+@import "./_scss/_colors.scss";
+@import "./_scss/animations.scss";
+@import "./header.scss";
+@import "./footer.scss";
+
+:root {
+  height: 100vh;
+  width: 100vw;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: inherit;
+  color: $color-light;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: url("../images/pexels-oleksandr-p-376368.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    animation-name: leftIncoming;
+    animation-duration: 5s;
+  }
+}

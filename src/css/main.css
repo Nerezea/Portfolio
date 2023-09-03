@@ -1,3 +1,58 @@
+@import url(https://fonts.bunny.net/css?family=aclonica:400);
+@keyframes leftIncoming {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2%;
+  width: 100%;
+  text-align: center;
+}
+header h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-family: "Aclonica", sans-serif;
+}
+header nav {
+  background-color: rgba(255, 255, 255, 0.193);
+  height: 10rem;
+  background-image: linear-gradient(to right bottom, rgba(111, 136, 195, 0.24), rgba(19, 73, 211, 0.51));
+  clip-path: polygon(0 0, 100% 0, 100% 7.5vh, 0 100%);
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+}
+header nav ul li {
+  font-size: 2.5rem;
+}
+header nav ul li:hover {
+  transform: translateY(5px);
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.085);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  width: 100%;
+  padding: 2%;
+  bottom: 0;
+}
+
 :root {
   height: 100vh;
   width: 100vw;
@@ -11,7 +66,7 @@
   text-decoration: none;
   list-style-type: none;
   box-sizing: inherit;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 html {
@@ -31,22 +86,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .main h1 {
   animation-name: leftIncoming;
   animation-duration: 5s;
-}
-
-@keyframes leftIncoming {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  80% {
-    transform: translateX(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }

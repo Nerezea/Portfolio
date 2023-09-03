@@ -11,8 +11,7 @@
     "preview": "vite preview",
     "pre-deploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "header.scss": "sass --watch ./src/css/scss/header.scss ./src/css/header.css --no-source-map",
-    "footer.scss": "sass --watch ./src/css/scss/footer.scss ./src/css/footer.css --no-source-map"
+    "main.scss": "sass --watch ./src/css/scss/main.scss ./src/css/main.css --no-source-map"
   },
   "dependencies": {
     "gh-pages": "^6.0.0",
