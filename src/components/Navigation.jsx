@@ -15,7 +15,7 @@ const Navigation = () => {
               <NavLink
                 to={item.to}
                 style={({ isActive }) => ({
-                  color: isActive ? "hotpink" : "white",
+                  color: isActive ? "black" : "",
                 })}
               >
                 {item.name}

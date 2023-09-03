@@ -1,22 +1,28 @@
 :root {
   height: 100vh;
   width: 100vw;
-  font-size: 62.5%;
-  box-sizing: border-box;
 }
 
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style-type: none;
+  box-sizing: inherit;
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-  color: white;
-  background-color: black;
-  /*   background: url("../images/pexels-clive-kim-4447401.jpg"); */
+  background: url("../images/pexels-oleksandr-p-376368.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 
 .main {
@@ -24,4 +30,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main h1 {
+  animation-name: leftIncoming;
+  animation-duration: 5s;
+}
+
+@keyframes leftIncoming {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

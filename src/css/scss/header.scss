@@ -1,4 +1,8 @@
 @import url(https://fonts.bunny.net/css?family=aclonica:400);
+$color-light: white;
+$color-dark: rgba(255, 255, 255);
+$color-lightblue: rgba(111, 136, 195);
+$color-darkblue: rgba(19, 73, 211);
 
 header {
   position: fixed;
@@ -9,14 +13,21 @@ header {
   text-align: center;
 
   h1 {
-    color: white;
+    color: $color-light;
     font-size: 4rem;
     font-family: "Aclonica", sans-serif;
   }
 
   nav {
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: rgba($color-light, 0.193);
+    height: 10rem;
 
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-lightblue, 0.24),
+      rgba($color-darkblue, 0.51)
+    );
+    clip-path: polygon(0 0, 100% 0, 100% 7.5vh, 0 100%);
     ul {
       display: flex;
       justify-content: space-around;
@@ -25,8 +36,8 @@ header {
       li {
         font-size: 2.5rem;
 
-        a {
-          color: white;
+        &:hover {
+          transform: translateY(5px);
         }
       }
     }
