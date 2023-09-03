@@ -5,5 +5,6 @@ deploy pages
 3. "pre-deploy": "npm run build"
 4. "deploy": "gh-pages -d dist"
 
-base: "/portfolio", in vite config.js
-"homepage": "https://Nerezea.github.io/portfolio", in package
+Removed the following from vite config and package json
+base: "/portfolio", (:line 5 in vite config.js)
+"homepage": "https://Nerezea.github.io/portfolio", (:line 2 in package.json)

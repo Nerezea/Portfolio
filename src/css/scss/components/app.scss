@@ -1,0 +1,26 @@
+:root {
+  height: 100vh;
+  width: 100vw;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: inherit;
+  color: $color-light;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: url("../images/pexels-oleksandr-p-376368.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
