@@ -8,9 +8,11 @@ const Layout = ({ children }) => {
   };
   return (
     <>
-      <Header />
-      {children}
-      <Footer />
+      <div className="flexbox-container">
+        <Header />
+        {children}
+        <Footer />
+      </div>
     </>
   );
 };

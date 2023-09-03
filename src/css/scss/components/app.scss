@@ -11,16 +11,17 @@
   text-decoration: none;
   list-style-type: none;
   box-sizing: inherit;
-  color: $color-light;
 }
 
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
-  background: url("../images/pexels-oleksandr-p-376368.jpg");
+  background-image: linear-gradient(to right bottom, $red-two, $red-three);
   background-size: cover;
   background-repeat: no-repeat;
-  box-sizing: border-box;
+  line-height: 1.6;
+  min-height: 100vh;
 }

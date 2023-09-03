@@ -1,11 +1,37 @@
-.main {
+.homepage {
   height: 100vh;
+  padding: 2%;
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  h1 {
-    animation-name: leftIncoming;
-    animation-duration: 5s;
+  background: url("../images/pexels-oleksandr-p-376368.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container {
+    height: 20rem;
+    padding: 2rem 10rem;
+
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-lightblue, 0.24),
+      rgba($color-darkblue, 0.51)
+    );
+    clip-path: polygon(7.5vh 0, 100% 0, 100% 100%, 0 100%);
+
+    h1 {
+      animation-name: leftIncoming;
+      animation-duration: 5s;
+      padding: 2rem;
+    }
+    h2 {
+      color: transparent;
+      background-image: linear-gradient(to right, $color-yellow, $color-dark);
+      background-clip: inherit;
+      -webkit-background-clip: text;
+    }
   }
 }

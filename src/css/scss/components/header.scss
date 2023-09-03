@@ -1,41 +1,25 @@
 @import url(https://fonts.bunny.net/css?family=aclonica:400);
-@import "../_scss/_colors.scss";
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 2%;
-  width: 100%;
-  text-align: center;
-
-  h1 {
-    color: $color-light;
-    font-size: 4rem;
-    font-family: "Aclonica", sans-serif;
-  }
+  height: 4rem;
+  background-color: #fff;
+  border-bottom: $grey-light-two;
+  font-family: "Aclonica", sans-serif;
 
   nav {
-    background-color: rgba($color-light, 0.193);
-    height: 10rem;
-
     background-image: linear-gradient(
       to right bottom,
       rgba($color-lightblue, 0.24),
       rgba($color-darkblue, 0.51)
     );
-    clip-path: polygon(0 0, 100% 0, 100% 7.5vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 3.5vh, 0 100%);
     ul {
       display: flex;
       justify-content: space-around;
-      padding: 1%;
+      align-items: center;
 
       li {
         font-size: 2.5rem;
-
-        &:hover {
-          transform: translateY(5px);
-        }
       }
     }
   }

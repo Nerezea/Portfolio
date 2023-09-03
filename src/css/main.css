@@ -25,49 +25,38 @@
   text-decoration: none;
   list-style-type: none;
   box-sizing: inherit;
-  color: rgb(255, 255, 255);
 }
 
 html {
   font-size: 62.5%;
-}
-
-body {
-  background: url("../images/pexels-oleksandr-p-376368.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   box-sizing: border-box;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 2%;
-  width: 100%;
-  text-align: center;
+body {
+  background-image: linear-gradient(to right bottom, #ff3366, #ba265d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: 1.6;
+  min-height: 100vh;
 }
-header h1 {
-  color: rgb(255, 255, 255);
-  font-size: 4rem;
+
+header {
+  height: 4rem;
+  background-color: #fff;
+  border-bottom: #f4f2f2;
   font-family: "Aclonica", sans-serif;
 }
 header nav {
-  background-color: rgba(255, 255, 255, 0.193);
-  height: 10rem;
   background-image: linear-gradient(to right bottom, rgba(111, 136, 195, 0.24), rgba(19, 73, 211, 0.51));
-  clip-path: polygon(0 0, 100% 0, 100% 7.5vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 3.5vh, 0 100%);
 }
 header nav ul {
   display: flex;
   justify-content: space-around;
-  padding: 1%;
+  align-items: center;
 }
 header nav ul li {
   font-size: 2.5rem;
-}
-header nav ul li:hover {
-  transform: translateY(5px);
 }
 
 footer {
@@ -80,13 +69,159 @@ footer {
   bottom: 0;
 }
 
-.main {
+.homepage {
   height: 100vh;
+  padding: 2%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url("../images/pexels-oleksandr-p-376368.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.main h1 {
+.homepage .container {
+  height: 20rem;
+  padding: 2rem 10rem;
+  background-image: linear-gradient(to right bottom, rgba(111, 136, 195, 0.24), rgba(19, 73, 211, 0.51));
+  clip-path: polygon(7.5vh 0, 100% 0, 100% 100%, 0 100%);
+}
+.homepage .container h1 {
   animation-name: leftIncoming;
   animation-duration: 5s;
+  padding: 2rem;
+}
+.homepage .container h2 {
+  color: transparent;
+  background-image: linear-gradient(to right, yellow, rgb(0, 0, 0));
+  background-clip: inherit;
+  -webkit-background-clip: text;
+}
+
+.projects {
+  background-color: #faf9f9;
+}
+.projects .columns-3 {
+  width: 100%;
+  display: flex;
+}
+.projects .columns-3 .column {
+  width: 33.3333333333%;
+  padding-left: 2%;
+}
+.projects .columns-3 .column .card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+}
+.projects .columns-3 .column .card .card-side {
+  color: black;
+  font-size: 2rem;
+  height: 50rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+.projects .columns-3 .column .card .card-side-front {
+  background-color: white;
+}
+.projects .columns-3 .column .card .card-side-back {
+  transform: rotateY(180deg);
+}
+.projects .columns-3 .column .card .card-side-back-1 {
+  background-image: linear-gradient(to right bottom, yellow, orange);
+}
+.projects .columns-3 .column .card .card-side-back-2 {
+  background-image: linear-gradient(to right bottom, red, black);
+}
+.projects .columns-3 .column .card .card-side-back-3 {
+  background-image: linear-gradient(to right bottom, cyan, blue);
+}
+.projects .columns-3 .column .card:hover .card-side-front {
+  transform: rotateY(-180deg);
+}
+.projects .columns-3 .column .card:hover .card-side-back {
+  transform: rotateY(0deg);
+}
+.projects .columns-3 .column .card .card-picture {
+  background-size: cover;
+  height: 23rem;
+  background-blend-mode: screen;
+}
+.projects .columns-3 .column .card .card-picture-1 {
+  background-image: linear-gradient(to right bottom, yellow, orange), url("../../../images/pexels-oleksandr-p-376368.jpg");
+}
+.projects .columns-3 .column .card .card-picture-2 {
+  background-image: url("../../../images/placeholder.jpg");
+}
+.projects .columns-3 .column .card .card-picture-3 {
+  background-image: url("../../../images/placeholder.jpg");
+}
+
+.flexbox-container {
+  max-width: 120rem;
+  min-height: 50rem;
+  margin: 8rem auto;
+  background-color: #f4f2f2;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+.flexbox-container .content {
+  display: flex;
+}
+.flexbox-container .sidebar {
+  background-color: #333;
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.flexbox-container .sidebar .side-nav {
+  font-size: 1.4rem;
+  margin-top: 3.5rem;
+}
+.flexbox-container .sidebar .side-nav-item {
+  position: relative;
+}
+.flexbox-container .sidebar .side-nav-item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.flexbox-container .sidebar .side-nav-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #eb2f64;
+  transform: scaleY(0);
+  transform-origin: middle;
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.2s;
+}
+.flexbox-container .sidebar .side-nav-item-active::before, .flexbox-container .sidebar .side-nav-item:hover::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+.flexbox-container .sidebar .side-nav-item:active::before {
+  background-color: #ff3366;
+}
+.flexbox-container .sidebar .side-nav-item-link:link, .flexbox-container .sidebar .side-nav-item-link:visited {
+  color: #faf9f9;
+  text-transform: uppercase;
+  display: block;
+  padding: 1.5rem 3.5rem;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+.flexbox-container .main-view {
+  background-color: orangered;
+  flex: 1;
+  height: 60rem;
 }
