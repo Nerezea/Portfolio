@@ -20,6 +20,7 @@
       rgba($color-lightblue, 0.24),
       rgba($color-darkblue, 0.51)
     );
+    -webkit-clip-path: polygon(7.5vh 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(7.5vh 0, 100% 0, 100% 100%, 0 100%);
 
     h1 {

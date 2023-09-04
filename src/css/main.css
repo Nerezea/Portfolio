@@ -84,6 +84,7 @@ footer {
   height: 20rem;
   padding: 2rem 10rem;
   background-image: linear-gradient(to right bottom, rgba(111, 136, 195, 0.24), rgba(19, 73, 211, 0.51));
+  -webkit-clip-path: polygon(7.5vh 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(7.5vh 0, 100% 0, 100% 100%, 0 100%);
 }
 .homepage .container h1 {
@@ -107,25 +108,26 @@ footer {
 }
 .projects .columns-3 .column {
   width: 33.3333333333%;
-  padding-left: 2%;
+  padding: 2% 2%;
 }
 .projects .columns-3 .column .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 52rem;
 }
 .projects .columns-3 .column .card .card-side {
   color: black;
   font-size: 2rem;
-  height: 50rem;
+  height: 52rem;
   transition: all 0.8s ease;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   backface-visibility: hidden;
-  border-radius: 3px;
+  border-radius: 13px;
+  overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .projects .columns-3 .column .card .card-side-front {
@@ -135,13 +137,58 @@ footer {
   transform: rotateY(180deg);
 }
 .projects .columns-3 .column .card .card-side-back-1 {
-  background-image: linear-gradient(to right bottom, yellow, orange);
+  background-image: linear-gradient(to right bottom, rgb(210, 210, 169), orange);
 }
 .projects .columns-3 .column .card .card-side-back-2 {
   background-image: linear-gradient(to right bottom, red, black);
 }
 .projects .columns-3 .column .card .card-side-back-3 {
   background-image: linear-gradient(to right bottom, cyan, blue);
+}
+.projects .columns-3 .column .card .card-side-back .card-side-back-cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-info {
+  text-align: center;
+  margin-bottom: 8rem;
+  color: white;
+}
+.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-info-1 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-info-2 {
+  font-size: 4rem;
+  font-weight: 100;
+}
+.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button, .projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button:link, .projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button:active, .projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .projects .columns-3 .column .card:hover .card-side-front {
   transform: rotateY(-180deg);
@@ -153,15 +200,57 @@ footer {
   background-size: cover;
   height: 23rem;
   background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 .projects .columns-3 .column .card .card-picture-1 {
-  background-image: linear-gradient(to right bottom, yellow, orange), url("../../../images/pexels-oleksandr-p-376368.jpg");
+  background-image: linear-gradient(to right bottom, rgb(210, 210, 169), orange), url("../../../src/images/pexels-oleksandr-p-376368.jpg");
 }
 .projects .columns-3 .column .card .card-picture-2 {
-  background-image: url("../../../images/placeholder.jpg");
+  background-image: linear-gradient(to right bottom, red, black), url("../../../src/images/pexels-oleksandr-p-376368.jpg");
 }
 .projects .columns-3 .column .card .card-picture-3 {
-  background-image: url("../../../images/placeholder.jpg");
+  background-image: linear-gradient(to right bottom, cyan, blue), url("../../../src/images/pexels-oleksandr-p-376368.jpg");
+}
+.projects .columns-3 .column .card .card-heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: white;
+  position: absolute;
+  top: 14rem;
+  right: 2rem;
+  width: 75%;
+}
+.projects .columns-3 .column .card .card-heading .card-heading-span {
+  padding: 0.5rem 1.5rem;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.projects .columns-3 .column .card .card-heading .card-heading-span-1 {
+  background-image: linear-gradient(to right bottom, rgba(210, 210, 169, 0.85), rgba(255, 165, 0, 0.85));
+}
+.projects .columns-3 .column .card .card-heading .card-heading-span-2 {
+  background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+}
+.projects .columns-3 .column .card .card-heading .card-heading-span-3 {
+  background-image: linear-gradient(to right bottom, rgba(0, 255, 255, 0.85), rgba(0, 0, 255, 0.85));
+}
+.projects .columns-3 .column .card .card-details {
+  padding: 1.5rem;
+}
+.projects .columns-3 .column .card .card-details ul {
+  width: 80%;
+  margin: 0 auto;
+}
+.projects .columns-3 .column .card .card-details ul li {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+.projects .columns-3 .column .card .card-details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
 }
 
 .flexbox-container {
