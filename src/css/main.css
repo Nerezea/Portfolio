@@ -115,7 +115,7 @@ footer {
   position: relative;
   height: 52rem;
 }
-.projects .columns-3 .column .card .card-side {
+.projects .columns-3 .column .card-side {
   color: black;
   font-size: 2rem;
   height: 52rem;
@@ -129,22 +129,22 @@ footer {
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
-.projects .columns-3 .column .card .card-side-front {
+.projects .columns-3 .column .card-side-front {
   background-color: white;
 }
-.projects .columns-3 .column .card .card-side-back {
+.projects .columns-3 .column .card-side-back {
   transform: rotateY(180deg);
 }
-.projects .columns-3 .column .card .card-side-back-1 {
+.projects .columns-3 .column .card-side-back-1 {
   background-image: linear-gradient(to right bottom, rgb(210, 210, 169), orange);
 }
-.projects .columns-3 .column .card .card-side-back-2 {
+.projects .columns-3 .column .card-side-back-2 {
   background-image: linear-gradient(to right bottom, red, black);
 }
-.projects .columns-3 .column .card .card-side-back-3 {
+.projects .columns-3 .column .card-side-back-3 {
   background-image: linear-gradient(to right bottom, cyan, blue);
 }
-.projects .columns-3 .column .card .card-side-back .card-side-back-cta {
+.projects .columns-3 .column .card-side-back .card-side-back-cta {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -152,20 +152,20 @@ footer {
   text-align: center;
   width: 90%;
 }
-.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-info {
+.projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-info {
   text-align: center;
   margin-bottom: 8rem;
   color: white;
 }
-.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-info-1 {
+.projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-info-1 {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
-.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-info-2 {
+.projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-info-2 {
   font-size: 4rem;
   font-weight: 100;
 }
-.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button, .projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button:link, .projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button:visited {
+.projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-button, .projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-button:link, .projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-button:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -176,15 +176,15 @@ footer {
   border: none;
   cursor: pointer;
 }
-.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button:hover {
+.projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
-.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button:hover::after {
+.projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-button:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-.projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button:active, .projects .columns-3 .column .card .card-side-back .card-side-back-cta .card-side-back-cta-button:focus {
+.projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-button:active, .projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-button:focus {
   outline: none;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
