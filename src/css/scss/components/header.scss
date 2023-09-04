@@ -12,7 +12,6 @@ header {
       rgba($color-lightblue, 0.24),
       rgba($color-darkblue, 0.51)
     );
-    clip-path: polygon(0 0, 100% 0, 100% 3.5vh, 0 100%);
     ul {
       display: flex;
       justify-content: space-around;

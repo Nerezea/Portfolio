@@ -48,7 +48,6 @@ header {
 }
 header nav {
   background-image: linear-gradient(to right bottom, rgba(111, 136, 195, 0.24), rgba(19, 73, 211, 0.51));
-  clip-path: polygon(0 0, 100% 0, 100% 3.5vh, 0 100%);
 }
 header nav ul {
   display: flex;
@@ -310,7 +309,7 @@ footer {
   align-items: center;
 }
 .flexbox-container .main-view {
-  background-color: orangered;
+  background-color: white;
   flex: 1;
   height: 60rem;
 }
