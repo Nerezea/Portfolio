@@ -9,7 +9,7 @@ const ResumePage = () => {
             </a>
           </li>
           <li className="side-nav-item">
-            <a href="portfolio/#/resume/#" className="side-nav-item-link">
+            <a href="/resume/#" className="side-nav-item-link">
               <span className="side-nav-item-link-span">Zeugnisse</span>
             </a>
           </li>
