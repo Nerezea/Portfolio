@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
 
-const ResumePage = () => {
+const ResumePage = ({ children }) => {
+  ResumePage.propTypes = {
+    children: PropTypes.object,
+  };
+
   const items = [
     { name: "CV", to: "/resume/cv", id: 1 },
     { name: "School Certificates", to: "/resume/certificates", id: 2 },
@@ -23,7 +28,9 @@ const ResumePage = () => {
         </ul>
       </nav>
 
-      <div className="main-view">mainview</div>
+      <div className="main-view">
+        <div className="main-text">{children}</div>
+      </div>
     </div>
   );
 };

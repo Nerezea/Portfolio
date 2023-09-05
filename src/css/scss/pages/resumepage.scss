@@ -70,5 +70,12 @@
     background-color: white;
     flex: 1;
     height: 60rem;
+
+    .main-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
   }
 }
