@@ -24,6 +24,24 @@ const Navigation = () => {
           );
         })}
       </ul>
+      <i className="fa-solid fa-bars burgermenu">
+        <ul>
+          {items.map((item) => {
+            return (
+              <li key={item.id}>
+                <NavLink
+                  to={item.to}
+                  style={({ isActive }) => ({
+                    color: isActive ? "black" : "",
+                  })}
+                >
+                  {item.name}
+                </NavLink>
+              </li>
+            );
+          })}
+        </ul>
+      </i>
     </nav>
   );
 };

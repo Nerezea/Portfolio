@@ -33,11 +33,10 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to right bottom, #ff3366, #ba265d);
+  background: grey;
   background-size: cover;
-  background-repeat: no-repeat;
   line-height: 1.6;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 header {
@@ -57,7 +56,30 @@ header nav ul {
 header nav ul li {
   font-size: 2.5rem;
 }
+header .burgermenu {
+  position: absolute;
+  top: 0;
+  right: 20rem;
+  font-size: 3rem;
+  border-radius: 5px;
+  line-height: 45px;
+}
+header .burgermenu:hover ul {
+  display: block;
+  position: absolute;
+}
+header .burgermenu ul {
+  display: none;
+  background-image: linear-gradient(to right bottom, rgb(229, 229, 219), rgb(111, 106, 98));
+  padding: 1rem;
+  text-align: left;
+}
 
+@media screen and (min-width: 992px) {
+  .burgermenu {
+    display: none;
+  }
+}
 footer {
   background-color: rgba(255, 255, 255, 0.085);
   text-align: center;
@@ -71,23 +93,21 @@ footer {
 .homepage {
   height: 100vh;
   padding: 2%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url("../images/pexels-oleksandr-p-376368.jpg");
+  background-image: linear-gradient(to right bottom, rgb(229, 229, 219), rgb(111, 106, 98)), url("../../../src/images/pexels-oleksandr-p-376368.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-blend-mode: screen;
 }
 .homepage .container {
-  height: 20rem;
+  height: 45rem;
   padding: 2rem 10rem;
-  background-image: linear-gradient(to right bottom, rgba(111, 136, 195, 0.24), rgba(19, 73, 211, 0.51));
+  background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.24), rgba(255, 255, 255, 0.51));
   -webkit-clip-path: polygon(7.5vh 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(7.5vh 0, 100% 0, 100% 100%, 0 100%);
 }
 .homepage .container h1 {
   animation-name: leftIncoming;
+  font-size: 4rem;
   animation-duration: 5s;
   padding: 2rem;
 }
@@ -96,6 +116,9 @@ footer {
   background-image: linear-gradient(to right, yellow, rgb(0, 0, 0));
   background-clip: inherit;
   -webkit-background-clip: text;
+}
+.homepage .container p {
+  font-size: 1.8rem;
 }
 
 .projects {

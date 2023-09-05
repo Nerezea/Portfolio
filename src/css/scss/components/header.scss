@@ -12,6 +12,7 @@ header {
       rgba($color-lightblue, 0.24),
       rgba($color-darkblue, 0.51)
     );
+
     ul {
       display: flex;
       justify-content: space-around;
@@ -21,5 +22,36 @@ header {
         font-size: 2.5rem;
       }
     }
+  }
+
+  .burgermenu {
+    position: absolute;
+    top: 0;
+    right: 20rem;
+    font-size: 3rem;
+    border-radius: 5px;
+    line-height: 45px;
+
+    &:hover ul {
+      display: block;
+      position: absolute;
+    }
+
+    ul {
+      display: none;
+      background-image: linear-gradient(
+        to right bottom,
+        rgb(229, 229, 219),
+        rgb(111, 106, 98)
+      );
+      padding: 1rem;
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .burgermenu {
+    display: none;
   }
 }
