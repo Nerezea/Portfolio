@@ -1,10 +1,11 @@
-import { NavLink } from "react-router-dom";
-import PropTypes from "prop-types";
+import { NavLink, useParams } from "react-router-dom";
+import _cv from "../pages/_pages/_cv";
+import _cerificates from "../pages/_pages/_certificates";
+import _something from "../pages/_pages/_something";
 
-const ResumePage = ({ children }) => {
-  ResumePage.propTypes = {
-    children: PropTypes.object,
-  };
+const ResumePage = () => {
+  const params = useParams();
+  console.log(params);
 
   const items = [
     { name: "CV", to: "/resume/cv", id: 1 },
@@ -29,7 +30,11 @@ const ResumePage = ({ children }) => {
       </nav>
 
       <div className="main-view">
-        <div className="main-text">{children}</div>
+        <div className="main-text">
+          {params.cv === "cv" && <_cv />}
+          {params.cv === "certificates" && <_cerificates />}
+          {params.cv === "something" && <_something />}
+        </div>
       </div>
     </div>
   );
