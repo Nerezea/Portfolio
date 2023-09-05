@@ -133,7 +133,6 @@ footer {
 }
 .homepage .about-section .about-container .text-content {
   width: 50%;
-  border: 2px solid red;
 }
 .homepage .about-section .about-container .text-content h3 {
   font-size: 1.6rem;
@@ -148,7 +147,37 @@ footer {
 }
 .homepage .about-section .about-container .image-content {
   width: 40%;
-  border: 2px solid red;
+}
+.homepage .about-section .about-container .image-content .image-composition {
+  position: relative;
+}
+.homepage .about-section .about-container .image-content .image-composition .composition-photo {
+  width: 60%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.4s;
+}
+.homepage .about-section .about-container .image-content .image-composition .composition-photo-1 {
+  left: 0;
+  top: -2rem;
+}
+.homepage .about-section .about-container .image-content .image-composition .composition-photo-2 {
+  right: 2rem;
+  top: 2rem;
+}
+.homepage .about-section .about-container .image-content .image-composition .composition-photo-3 {
+  left: 20%;
+  top: 10rem;
+}
+.homepage .about-section .about-container .image-content .image-composition .composition-photo:hover {
+  transform: scale(1.5) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.homepage .about-section .about-container .image-content .image-composition:hover .composition-photo:not(:hover) {
+  transform: scale(0.6);
 }
 
 .projects {

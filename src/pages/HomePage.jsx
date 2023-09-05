@@ -27,7 +27,25 @@ const HomePage = () => {
               vitae perspiciatis dolor necessitatibus enim veniam nihil.
             </p>
           </div>
-          <div className="image-content">image-content</div>
+          <div className="image-content">
+            <div className="image-composition">
+              <img
+                src="../../src/images/placeholder.jpg"
+                alt="photo-1"
+                className="composition-photo composition-photo-1"
+              />
+              <img
+                src="../../src/images/placeholder.jpg"
+                alt="photo-2"
+                className="composition-photo composition-photo-2"
+              />
+              <img
+                src="../../src/images/placeholder.jpg"
+                alt="photo-3"
+                className="composition-photo composition-photo-3"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
