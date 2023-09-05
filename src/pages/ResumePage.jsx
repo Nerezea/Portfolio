@@ -4,8 +4,8 @@ import _cerificates from "../pages/_pages/_certificates";
 import _something from "../pages/_pages/_something";
 
 const ResumePage = () => {
-  const params = useParams();
-  console.log(params);
+  const { content } = useParams();
+  console.log(content);
 
   const items = [
     { name: "CV", to: "/resume/cv", id: 1 },
@@ -20,9 +20,7 @@ const ResumePage = () => {
           {items.map((item) => {
             return (
               <li className="side-nav-item" key={item.id}>
-                <NavLink to={item.to}>
-                  <span className="side-nav-item-link">{item.name}</span>
-                </NavLink>
+                <NavLink to={item.to}>{item.name}</NavLink>
               </li>
             );
           })}
@@ -31,9 +29,9 @@ const ResumePage = () => {
 
       <div className="main-view">
         <div className="main-text">
-          {params.cv === "cv" && <_cv />}
-          {params.cv === "certificates" && <_cerificates />}
-          {params.cv === "something" && <_something />}
+          {content === "cv" && <_cv />}
+          {content === "certificates" && <_cerificates />}
+          {content === "something" && <_something />}
         </div>
       </div>
     </div>

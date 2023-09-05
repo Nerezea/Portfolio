@@ -31,9 +31,9 @@ const App = () => {
         <Route path="/projects" element={<ProjectPage />} />
         <Route path="/resume">
           <Route index element={<ResumePage />} />
-          <Route path=":cv" element={<ResumePage />} />
-          <Route path=":certificates" element={<ResumePage />} />
-          <Route path=":something" element={<ResumePage />} />
+          <Route path=":content" element={<ResumePage />} />
+          {/* <Route path=":certificates" element={<ResumePage />} />
+          <Route path=":something" element={<ResumePage />} /> */}
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

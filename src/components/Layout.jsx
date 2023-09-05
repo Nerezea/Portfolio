@@ -4,8 +4,9 @@ import PropTypes from "prop-types";
 
 const Layout = ({ children }) => {
   Layout.propTypes = {
-    children: PropTypes.object,
+    children: PropTypes.node.isRequired,
   };
+
   return (
     <>
       <div className="flexbox-container">

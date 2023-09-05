@@ -21,7 +21,7 @@
       font-size: 2rem;
       margin-top: 2rem;
 
-      &-item {
+      .side-nav-item {
         position: relative;
 
         &:not(:last-child) {
@@ -47,11 +47,11 @@
           width: 100%;
         }
 
-        &:active::before {
+        .active {
           background-color: $red-two;
         }
 
-        .side-nav-item-link {
+        a {
           color: black;
           text-transform: uppercase;
           display: block;
