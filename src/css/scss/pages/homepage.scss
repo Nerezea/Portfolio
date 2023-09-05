@@ -1,5 +1,5 @@
 .homepage {
-  height: 100vh;
+  height: 70rem;
   padding: 2%;
 
   background-image: linear-gradient(
@@ -12,32 +12,53 @@
   background-repeat: no-repeat;
   background-blend-mode: screen;
 
-  .container {
-    height: 45rem;
-    padding: 2rem 10rem;
-
-    background-image: linear-gradient(
-      to right bottom,
-      rgba(grey, 0.24),
-      rgba(white, 0.51)
-    );
-    -webkit-clip-path: polygon(7.5vh 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(7.5vh 0, 100% 0, 100% 100%, 0 100%);
-
-    h1 {
-      animation-name: leftIncoming;
-      font-size: 4rem;
-      animation-duration: 5s;
-      padding: 2rem;
-    }
+  .about-section {
+    padding: 4rem 0;
     h2 {
-      color: transparent;
-      background-image: linear-gradient(to right, $color-yellow, $color-dark);
-      background-clip: inherit;
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.2rem;
+
+      animation-name: leftIncoming;
+      animation-duration: 5s;
+      transition: all 0.8s;
+
+      background-image: linear-gradient(to right, grey, black);
+      background-clip: text;
       -webkit-background-clip: text;
+      color: transparent;
+
+      &:hover {
+        transform: skewX(20deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba($color: black, $alpha: 0.4);
+      }
     }
-    p {
-      font-size: 1.8rem;
+    .about-container {
+      display: flex;
+      justify-content: space-around;
+
+      .text-content {
+        width: 50%;
+        border: 2px solid red;
+
+        h3 {
+          font-size: 1.6rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-size: 1.2rem;
+          &:not(:last-child) {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      .image-content {
+        width: 40%;
+        border: 2px solid red;
+      }
     }
   }
 }
