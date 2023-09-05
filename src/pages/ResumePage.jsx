@@ -1,23 +1,25 @@
+import { NavLink } from "react-router-dom";
+
 const ResumePage = () => {
+  const items = [
+    { name: "CV", to: "/resume/cv", id: 1 },
+    { name: "School Certificates", to: "/resume/certificates", id: 2 },
+    { name: "Something", to: "/resume/something", id: 3 },
+  ];
+
   return (
     <div className="content">
       <nav className="sidebar">
         <ul className="side-nav">
-          <li className="side-nav-item side-nav-item-active">
-            <a href="/resume/#" className="side-nav-item-link">
-              <span className="side-nav-item-link-span">Lebenslauf</span>
-            </a>
-          </li>
-          <li className="side-nav-item">
-            <a href="/resume/#" className="side-nav-item-link">
-              <span className="side-nav-item-link-span">Zeugnisse</span>
-            </a>
-          </li>
-          <li className="side-nav-item">
-            <a href="/resume/#" className="side-nav-item-link">
-              <span className="side-nav-item-link-span">Lebenslauf</span>
-            </a>
-          </li>
+          {items.map((item) => {
+            return (
+              <li className="side-nav-item" key={item.id}>
+                <NavLink to={item.to}>
+                  <span className="side-nav-item-link">{item.name}</span>
+                </NavLink>
+              </li>
+            );
+          })}
         </ul>
       </nav>
 

@@ -10,7 +10,7 @@
   }
 
   .sidebar {
-    background-color: $grey-dark-one;
+    background-color: $grey-light-four;
     flex: 0 0 18%;
 
     display: flex;
@@ -18,8 +18,9 @@
     justify-content: space-between;
 
     .side-nav {
-      font-size: 1.4rem;
-      margin-top: 3.5rem;
+      font-size: 2rem;
+      margin-top: 2rem;
+
       &-item {
         position: relative;
 
@@ -41,7 +42,6 @@
             background-color 0.2s;
         }
 
-        &-active::before,
         &:hover::before {
           transform: scaleY(1);
           width: 100%;
@@ -51,19 +51,16 @@
           background-color: $red-two;
         }
 
-        &-link {
-          &:link,
-          &:visited {
-            color: $grey-light-one;
-            text-transform: uppercase;
-            display: block;
-            padding: 1.5rem 3.5rem;
-            position: relative;
-            z-index: 10;
+        .side-nav-item-link {
+          color: black;
+          text-transform: uppercase;
+          display: block;
+          padding: 1rem 2.5rem;
+          position: relative;
+          z-index: 10;
 
-            display: flex;
-            align-items: center;
-          }
+          display: flex;
+          align-items: center;
         }
       }
     }

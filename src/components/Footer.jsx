@@ -3,7 +3,12 @@
 const Footer = () => {
   return (
     <footer>
-      <div className="reserved">®Reserved by Dennis Doedelkopf</div>
+      <div className="reserved">
+        ®Absolutely not Reserved by Dennis Doedelkopf
+      </div>
+      <i className="fa-brands fa-linkedin" />
+      <i className="fa-brands fa-github" />
+      <i className="fa-solid fa-envelope" />
     </footer>
   );
 };
