@@ -25,7 +25,7 @@ const ProjectPage = () => {
                   <p className="card-side-back-cta-info-2">Test</p>
                 </div>
                 <a href="#popup-1" className="card-side-back-cta-button">
-                  To the github
+                  To the Project
                 </a>
               </div>
             </div>
@@ -56,7 +56,7 @@ const ProjectPage = () => {
                   <p className="card-side-back-cta-info-2">Test</p>
                 </div>
                 <a href="#popup-2" className="card-side-back-cta-button">
-                  To the github
+                  To the Project
                 </a>
               </div>
             </div>
@@ -88,7 +88,7 @@ const ProjectPage = () => {
                   <p className="card-side-back-cta-info-2">Test</p>
                 </div>
                 <a href="#popup-3" className="card-side-back-cta-button">
-                  To the github
+                  To the Project
                 </a>
               </div>
             </div>
@@ -111,7 +111,10 @@ const ProjectPage = () => {
               quas harum ratione.
             </p>
 
-            <a href="http://" className="popup-button">
+            <a
+              href="https://github.com/Nerezea/WebDev---Alpaca"
+              className="popup-button"
+            >
               Github
             </a>
           </div>
@@ -133,7 +136,10 @@ const ProjectPage = () => {
               quas harum ratione.
             </p>
 
-            <a href="http://" className="popup-button">
+            <a
+              href="https://github.com/Nerezea/Korean-Vocabulary"
+              className="popup-button"
+            >
               Github
             </a>
           </div>
@@ -154,7 +160,6 @@ const ProjectPage = () => {
               nobis enim minus voluptates ipsum culpa facilis exercitationem,
               quas harum ratione.
             </p>
-
             <a href="http://" className="popup-button">
               Github
             </a>

@@ -183,7 +183,9 @@ footer i {
   -ms-hyphens: auto;
   -moz-hyphens: auto;
 }
-.popup .popup-content .popup-right a .popup-button {
+.popup .popup-content .popup-right .popup-button {
+  background-color: red;
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -194,15 +196,15 @@ footer i {
   border: none;
   cursor: pointer;
 }
-.popup .popup-content .popup-right a .popup-button:hover {
+.popup .popup-content .popup-right .popup-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
-.popup .popup-content .popup-right a .popup-button::after {
+.popup .popup-content .popup-right .popup-button::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-.popup .popup-content .popup-right a .popup-button:active, .popup .popup-content .popup-right a .popup-button:focus {
+.popup .popup-content .popup-right .popup-button:active, .popup .popup-content .popup-right .popup-button:focus {
   outline: none;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
