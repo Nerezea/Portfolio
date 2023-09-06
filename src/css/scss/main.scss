@@ -2,9 +2,11 @@
 @import "./_scss/_colors.scss";
 @import "./_scss/_utilities.scss";
 @import "./_scss/_variables.scss";
+@import "./_scss/mixin.scss";
 @import "./components/app.scss";
 @import "./components/header.scss";
 @import "./components/footer.scss";
+@import "./components/popup.scss";
 @import "./pages/homepage.scss";
 @import "./pages/projectpage.scss";
 @import "./pages/resumepage.scss";

@@ -1,0 +1,122 @@
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: black, $alpha: 0.8);
+  z-index: 25;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:target .popup-content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .popup-close {
+    &:link,
+    &:visited {
+      color: black;
+      position: absolute;
+      top: 1.5rem;
+      right: 2.5rem;
+      font-size: 4rem;
+      display: inline-block;
+      transition: all 0.2s;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: blue;
+    }
+  }
+
+  .popup-content {
+    @include absCenter;
+    width: 75%;
+    background-color: white;
+
+    box-shadow: 0 2rem 4rem rgba($color: black, $alpha: 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2);
+    transition: all 0.6s 0.2s;
+
+    display: flex;
+
+    .popup-left {
+      width: 60%;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .popup-right {
+      width: 40%;
+      vertical-align: middle;
+      padding: 3rem 5rem;
+      h2 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+
+        column-count: 2;
+        column-gap: 2.5rem;
+        column-rule: 1px solid rgb(241, 238, 238);
+
+        -moz-column-count: 2;
+        -moz-column-gap: 2.5rem;
+        -moz-column-rule: 1px solid rgb(241, 238, 238);
+
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+      }
+
+      a {
+        .popup-button {
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 1.5rem 4rem;
+          display: inline-block;
+          border-radius: 10rem;
+          transition: all 0.2s;
+          position: relative;
+
+          border: none;
+          cursor: pointer;
+
+          &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba(black, 0.2);
+          }
+
+          &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+          }
+          &:active,
+          &:focus {
+            outline: none;
+            transform: translateY(-1px);
+            box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+          }
+        }
+      }
+    }
+  }
+}

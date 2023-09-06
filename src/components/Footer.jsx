@@ -7,7 +7,10 @@ const Footer = () => {
         ®Absolutely not Reserved by Dennis Doedelkopf
       </div>
       <i className="fa-brands fa-linkedin" />
-      <i className="fa-brands fa-github" />
+      <a href="https://github.com/Nerezea">
+        <i className="fa-brands fa-github" />
+      </a>
+
       <i className="fa-solid fa-envelope" />
     </footer>
   );

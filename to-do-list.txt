@@ -1,3 +1,5 @@
 1. Change footer icons from html to react symbols
 2. localisation for german & english
 3. respsonsive design
+4. popup with react instead of css
+5. include mail:to

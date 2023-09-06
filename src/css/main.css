@@ -98,9 +98,114 @@ footer {
   width: 100%;
   padding: 1.2rem;
 }
+footer a {
+  color: black;
+}
 footer i {
   font-size: 2rem;
   padding-right: 2%;
+}
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 25;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup-content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup .popup-close:link, .popup .popup-close:visited {
+  color: black;
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 4rem;
+  display: inline-block;
+  transition: all 0.2s;
+  line-height: 1;
+}
+.popup .popup-close:hover {
+  color: blue;
+}
+.popup .popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  background-color: white;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.2);
+  transition: all 0.6s 0.2s;
+  display: flex;
+}
+.popup .popup-content .popup-left {
+  width: 60%;
+}
+.popup .popup-content .popup-left img {
+  display: block;
+  width: 100%;
+}
+.popup .popup-content .popup-right {
+  width: 40%;
+  vertical-align: middle;
+  padding: 3rem 5rem;
+}
+.popup .popup-content .popup-right h2 {
+  font-size: 1.8rem;
+}
+.popup .popup-content .popup-right p {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  column-count: 2;
+  column-gap: 2.5rem;
+  column-rule: 1px solid rgb(241, 238, 238);
+  -moz-column-count: 2;
+  -moz-column-gap: 2.5rem;
+  -moz-column-rule: 1px solid rgb(241, 238, 238);
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+}
+.popup .popup-content .popup-right a .popup-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+.popup .popup-content .popup-right a .popup-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.popup .popup-content .popup-right a .popup-button::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.popup .popup-content .popup-right a .popup-button:active, .popup .popup-content .popup-right a .popup-button:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .homepage {
@@ -252,6 +357,7 @@ footer i {
   font-weight: 100;
 }
 .projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-button, .projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-button:link, .projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-button:visited {
+  background-color: white;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;

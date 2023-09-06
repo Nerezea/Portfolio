@@ -91,11 +91,36 @@ const ProjectPage = () => {
                   <p className="card-side-back-cta-info-1">Test</p>
                   <p className="card-side-back-cta-info-2">Test</p>
                 </div>
-                <button className="card-side-back-cta-button">
+                <a href="#popup" className="card-side-back-cta-button">
                   To the github
-                </button>
+                </a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="popup" id="popup">
+        <div className="popup-content">
+          <div className="popup-left">
+            <img
+              src="../../src/images/placeholder.jpg"
+              alt="Picture of Website"
+            />
+          </div>
+          <div className="popup-right">
+            <a href="#" className="popup-close">
+              &times;
+            </a>
+            <h2 className="u-margin-bottom-small">to the github page</h2>
+            <p className="u-margin-bottom-small">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
+              nobis enim minus voluptates ipsum culpa facilis exercitationem,
+              quas harum ratione.
+            </p>
+
+            <a href="http://" className="popup-button">
+              Github
+            </a>
           </div>
         </div>
       </div>
