@@ -102,10 +102,7 @@ const ProjectPage = () => {
       <div className="popup" id="popup">
         <div className="popup-content">
           <div className="popup-left">
-            <img
-              src="../../src/images/placeholder.jpg"
-              alt="Picture of Website"
-            />
+            <img src="public/images/placeholder.jpg" alt="Picture of Website" />
           </div>
           <div className="popup-right">
             <a href="#" className="popup-close">

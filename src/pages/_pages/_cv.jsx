@@ -2,7 +2,7 @@ const _cv = () => {
   return (
     <div className="cv">
       <object
-        data="../../src/images/dci_certificate.pdf"
+        data="/public/images/dci_certificate.pdf"
         type="application/pdf"
       ></object>
     </div>

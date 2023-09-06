@@ -395,13 +395,13 @@ footer i {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 .projects .columns-3 .column .card .card-picture-1 {
-  background-image: linear-gradient(to right bottom, rgb(210, 210, 169), orange), url("../../../src/images/pexels-oleksandr-p-376368.jpg");
+  background-image: linear-gradient(to right bottom, rgb(210, 210, 169), orange), url("public/images/pexels-oleksandr-p-376368.jpg");
 }
 .projects .columns-3 .column .card .card-picture-2 {
-  background-image: linear-gradient(to right bottom, red, black), url("../../../src/images/pexels-oleksandr-p-376368.jpg");
+  background-image: linear-gradient(to right bottom, red, black), url("public/images/pexels-oleksandr-p-376368.jpg");
 }
 .projects .columns-3 .column .card .card-picture-3 {
-  background-image: linear-gradient(to right bottom, cyan, blue), url("../../../src/images/pexels-oleksandr-p-376368.jpg");
+  background-image: linear-gradient(to right bottom, cyan, blue), url("public/images/pexels-oleksandr-p-376368.jpg");
 }
 .projects .columns-3 .column .card .card-heading {
   font-size: 2.8rem;
