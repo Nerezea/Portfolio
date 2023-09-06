@@ -358,6 +358,7 @@ footer i {
 }
 .projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-button, .projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-button:link, .projects .columns-3 .column .card-side-back .card-side-back-cta .card-side-back-cta-button:visited {
   background-color: white;
+  color: black;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;

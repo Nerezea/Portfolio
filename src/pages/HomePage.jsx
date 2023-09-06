@@ -30,17 +30,17 @@ const HomePage = () => {
           <div className="image-content">
             <div className="image-composition">
               <img
-                src="/images/placeholder.jpg"
+                src="/images/Affe03.jpg"
                 alt="photo-1"
                 className="composition-photo composition-photo-1"
               />
               <img
-                src="/images/placeholder.jpg"
+                src="/images/Affe06.jpg"
                 alt="photo-2"
                 className="composition-photo composition-photo-2"
               />
               <img
-                src="/images/placeholder.jpg"
+                src="/images/Affe09.jpg"
                 alt="photo-3"
                 className="composition-photo composition-photo-3"
               />
