@@ -1,2 +1,2 @@
 Link Website:
-https://nerezea.github.io/Portfolio/
+https://dennis-schoemer.netlify.app/
